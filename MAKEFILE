@@ -1,0 +1,4 @@
+main:
+	iverilog -o alu_op.vvp ALU_tb.v ALU.v ALU_XOR_AND_OR_6bit.v ALU_SHR_6bit.v
+	vvp alu_op.vvp
+	gtkwave alu_test.vcd

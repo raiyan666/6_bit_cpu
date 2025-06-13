@@ -1,0 +1,82 @@
+$date
+	Fri Jun 13 07:05:47 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ALU_tb $end
+$var wire 1 ! CF $end
+$var wire 1 " ZF $end
+$var wire 1 # SF $end
+$var wire 6 $ R [5:0] $end
+$var reg 6 % A [5:0] $end
+$var reg 6 & B [5:0] $end
+$var reg 1 ' OP $end
+$scope module uut $end
+$var wire 6 ( A [5:0] $end
+$var wire 6 ) B [5:0] $end
+$var wire 1 ! CF $end
+$var wire 1 ' OP $end
+$var wire 1 " ZF $end
+$var wire 1 # SF $end
+$var wire 6 * R_XANDOR [5:0] $end
+$var wire 6 + R_SHR [5:0] $end
+$var reg 6 , R [5:0] $end
+$scope module SHR1 $end
+$var wire 6 - in [5:0] $end
+$var wire 3 . shift [2:0] $end
+$var reg 6 / out [5:0] $end
+$upscope $end
+$scope module XANDOR1 $end
+$var wire 6 0 A [5:0] $end
+$var wire 6 1 B [5:0] $end
+$var wire 6 2 result [5:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111111 2
+b10101 1
+b101010 0
+b1 /
+b101 .
+b101010 -
+b111111 ,
+b1 +
+b111111 *
+b10101 )
+b101010 (
+0'
+b10101 &
+b101010 %
+b111111 $
+1#
+0"
+0!
+$end
+#10000
+0#
+b10101 +
+b10101 /
+b101010 *
+b101010 2
+b10101 $
+b10101 ,
+b1 .
+1'
+b1 &
+b1 )
+b1 1
+b101011 %
+b101011 (
+b101011 -
+b101011 0
+#30000
