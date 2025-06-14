@@ -1,4 +1,14 @@
-main:
+alu_tb:
 	iverilog -o alu_op.vvp ALU_tb.v ALU.v ALU_XOR_AND_OR_6bit.v ALU_SHR_6bit.v
 	vvp alu_op.vvp
 	gtkwave alu_test.vcd
+
+controller_tb:
+	iverilog -o controller_test.vvp controller_tb.v controller.v
+	vvp controller_test.vvp
+	gtkwave Controller_test.vcd
+
+top_tb:
+	iverilog -o top_test.vvp top_tb.v top.v controller.v ALU.v ALU_XOR_AND_OR_6bit.v ALU_SHR_6bit.v
+	vvp top_test.vvp
+	gtkwave top_test.vcd
